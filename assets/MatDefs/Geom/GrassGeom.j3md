@@ -1,0 +1,20 @@
+MaterialDef SimpleGeom {
+
+    MaterialParameters {
+        Texture2D GrassShapeMap
+        Texture2D GrassColorMap
+    }
+    Technique {
+        VertexShader GLSL330:   MatDefs/Geom/SimpleGeom.vert
+        GeometryShader GLSL330:   MatDefs/Geom/GrassGeomSimlper.geom
+        FragmentShader GLSL330: MatDefs/Geom/GrassGeom.frag
+
+        WorldParameters {
+            ViewMatrix
+            WorldViewProjectionMatrix
+            Time
+            Tpf
+        }
+    }
+
+}

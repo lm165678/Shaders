@@ -1,0 +1,8 @@
+Material My Material : Common/MatDefs/Gui/Gui.j3md {
+     MaterialParameters {
+        VertexColor : true
+        Color : 0.0 0.6 0.6 1.0
+     }
+    AdditionalRenderState {
+    }
+}
