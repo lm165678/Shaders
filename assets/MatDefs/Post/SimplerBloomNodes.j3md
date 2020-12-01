@@ -1,4 +1,4 @@
-MaterialDef Simple {
+MaterialDef SimplerBloomNodes {
     MaterialParameters {
         Texture2D Texture
         Int NumSamples

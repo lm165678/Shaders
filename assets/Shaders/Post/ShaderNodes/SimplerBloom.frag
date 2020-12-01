@@ -1,20 +1,18 @@
 #import "Common/ShaderLib/GLSLCompat.glsllib"
-uniform sampler2D sampler0;
-varying vec2 texCoord;
 float amount = 0.60; // suitable range = 0.00 - 1.00
 float power = 0.5; // suitable range = 0.0 - 1.0
 
 void main()
 {
-  vec3 color = texture2D(sampler0, texCoord.xy).xyz;
+  vec3 color = texture2D(sampler0, iTexCoord.xy).xyz;
   vec4 sum = vec4(0);
   vec3 bloom;
   
   for(int i= -3 ;i < 3; i++)
   {
-    sum += texture2D(sampler0, texCoord + vec2(-1, i)*0.004) * amount;
-    sum += texture2D(sampler0, texCoord + vec2(0, i)*0.004) * amount;
-    sum += texture2D(sampler0, texCoord + vec2(1, i)*0.004) * amount;
+    sum += texture2D(sampler0, iTexCoord + vec2(-1, i)*0.004) * amount;
+    sum += texture2D(sampler0, iTexCoord + vec2(0, i)*0.004) * amount;
+    sum += texture2D(sampler0, iTexCoord + vec2(1, i)*0.004) * amount;
   }
       
   if (color.r < 0.3 && color.g < 0.3 && color.b < 0.3)
@@ -34,6 +32,6 @@ void main()
   }
   
   bloom = mix(color, bloom, power);
-  gl_FragColor.rgb = bloom;
-  gl_FragColor.a = 1.0;
+  oColor.rgb = bloom;
+  oColor.a = 1.0;
 }

@@ -1,0 +1,14 @@
+MaterialDef SimplerBloom {
+    MaterialParameters {
+        Int NumSamples
+        Texture2D Texture
+    }
+
+    Technique {
+        VertexShader GLSL100 GLSL150:   Common/MatDefs/Post/Post.vert
+        FragmentShader GLSL100 GLSL150: Shaders/Post/SimplerBloom.frag
+
+        WorldParameters {
+        }
+    }
+}

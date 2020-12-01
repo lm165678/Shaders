@@ -19,7 +19,7 @@ public class SimplerBloomFilter extends Filter{
 
     @Override
     protected void initFilter(AssetManager manager, RenderManager renderManager, ViewPort vp, int w, int h) {
-        material = new Material(manager, "MatDefs/Post/SimplerBloomNodes.j3md");
+        material = new Material(manager, "MatDefs/Post/SimplerBloom.j3md");
     }
 
     @Override

@@ -1,7 +1,7 @@
 ShaderNodeDefinitions{
     ShaderNodeDefinition PostVert {      
         Type: Vertex
-        Shader GLSL100: Shaders/Post/Post.vert
+        Shader GLSL100: Shaders/Post/ShaderNodes/Post.vert
         Documentation{
             将数据输出到屏幕空间,以便后期图像处理
             @input iPos 位置输入属性
@@ -20,7 +20,7 @@ ShaderNodeDefinitions{
     }
     ShaderNodeDefinition SimpleBloomFrag {      
         Type: Fragment
-        Shader GLSL100: Shaders/Post/SimplerBloom.frag
+        Shader GLSL100: Shaders/Post/ShaderNodes/SimplerBloom.frag
         Documentation{
             简单的Bloom着色器；创建用于移动端。
             没有过多的样本和复杂的嵌套循环（使其与低端GPU兼容，并确保兼容移动端）。 
