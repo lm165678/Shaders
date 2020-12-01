@@ -1,0 +1,6 @@
+# view AndroidManifest.xml #generated:4
+-keep class com.mycompany.mygame.MainActivity { <init>(...); }
+
+# view res/layout/main.xml #generated:3
+-keep class com.mycompany.mygame.MainActivity$JmeFragment { <init>(...); }
+

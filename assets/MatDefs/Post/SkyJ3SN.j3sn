@@ -1,0 +1,30 @@
+ShaderNodeDefinitions{
+    ShaderNodeDefinition SkyVer {      
+        Type: Vertex
+        Shader GLSL100: MatDefs/sky/SkyVer.vert
+        Documentation{
+        }
+        Input {
+            vec4 iPos
+            mat4 IVMat
+            mat4 IPMat
+        }
+        Output {
+            vec3 str
+            vec4 oPos
+        }
+    }
+    ShaderNodeDefinition SkyFrag {      
+        Type: Fragment
+        Shader GLSL100: MatDefs/sky/SkyFrag.frag
+        Documentation{
+        }
+        Input {
+            vec3 str
+            samplerCube cubeMap
+        }
+        Output {
+            vec4 oColor
+        }
+    }
+}

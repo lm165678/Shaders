@@ -1,0 +1,39 @@
+ShaderNodeDefinitions{
+    ShaderNodeDefinition PostVert {      
+        Type: Vertex
+        Shader GLSL100: Shaders/Post/Post.vert
+        Documentation{
+            将数据输出到屏幕空间,以便后期图像处理
+            @input iPos 位置输入属性
+            @input iTexCoord 纹理坐标输入属性
+            @output iTexCoord 纹理坐标输出属性
+            @output oPos 位置输出属性
+        }
+        Input {
+            vec4 iPos
+            vec2 iTexCoord
+        }
+        Output {
+            vec4 oPos
+            vec2 iTexCoord
+        }
+    }
+    ShaderNodeDefinition SimpleBloomFrag {      
+        Type: Fragment
+        Shader GLSL100: Shaders/Post/SimplerBloom.frag
+        Documentation{
+            简单的Bloom着色器；创建用于移动端。
+            没有过多的样本和复杂的嵌套循环（使其与低端GPU兼容，并确保兼容移动端）。 
+            @input iTexCoord 输入纹理坐标属性
+            @input sampler0 输入采样纹理
+            @output oColor 输出颜色
+        }
+        Input {
+            vec2 iTexCoord
+            sampler2D sampler0
+        }
+        Output {
+            vec4 oColor
+        }
+    }
+}

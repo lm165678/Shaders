@@ -13,6 +13,11 @@ import com.jme3.post.filters.BloomFilter;
 import com.jme3.post.filters.FXAAFilter;
 import com.jme3.scene.Node;
 import com.jme3.system.AppSettings;
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -27,11 +32,11 @@ public abstract class FastApplication extends SimpleApplication{
     protected FXAAFilter mFXAAFilter;
     protected Node mScene;
     public FastApplication() {
-        this(1600, 900, "FastApplication");
+        this(900, 550, "FastApplication");
     }
     
     public FastApplication(String title){
-        this(1600, 900, title);
+        this(900, 550, title);
     }
 
     @Override
@@ -93,6 +98,19 @@ public abstract class FastApplication extends SimpleApplication{
         if(mFilterPostProcessor == null){
             mFilterPostProcessor = filterPostProcessor;
             viewPort.addProcessor(mFilterPostProcessor);
+        }
+    }
+    
+    public void focusGained(){
+        Robot rb = null;
+        try {
+            rb = new Robot();
+            rb.keyPress(KeyEvent.VK_CONTROL);
+            rb.keyPress(KeyEvent.VK_SHIFT);
+            rb.keyRelease(KeyEvent.VK_CONTROL);
+            rb.keyRelease(KeyEvent.VK_SHIFT);
+        } catch (AWTException ex) {
+            Logger.getLogger(FastApplication.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 

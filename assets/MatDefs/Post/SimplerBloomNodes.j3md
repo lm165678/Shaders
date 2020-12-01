@@ -1,0 +1,34 @@
+MaterialDef Simple {
+    MaterialParameters {
+        Texture2D Texture
+        Int NumSamples
+    }
+    Technique {
+        WorldParameters {
+        }
+        VertexShaderNodes {
+            ShaderNode PostVert {
+                Definition : PostVert : MatDefs/Post/SimplerBloom.j3sn
+                InputMappings {
+                    iPos = Global.position
+                    iTexCoord = Attr.inPosition.xy
+                }
+                OutputMappings {
+                    Global.position = oPos
+                }
+            }
+        }
+        FragmentShaderNodes {
+            ShaderNode SimpleBloomFrag {
+                Definition : SimpleBloomFrag : MatDefs/Post/SimplerBloom.j3sn
+                OutputMappings {
+                    Global.color = oColor
+                }
+                InputMappings {
+                    iTexCoord = PostVert.iTexCoord
+                    sampler0 = MatParam.Texture
+                }
+            }
+        }
+    }
+}

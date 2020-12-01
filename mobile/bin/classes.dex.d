@@ -1,0 +1,27 @@
+D:\MyWork\JmeProject\Shaders\mobile\bin\classes.dex : \
+D:\MyWork\JmeProject\Shaders\mobile\bin\classes\com\mycompany\mygame\BuildConfig.class \
+D:\MyWork\JmeProject\Shaders\mobile\bin\classes\com\mycompany\mygame\MainActivity$JmeFragment.class \
+D:\MyWork\JmeProject\Shaders\mobile\bin\classes\com\mycompany\mygame\MainActivity.class \
+D:\MyWork\JmeProject\Shaders\mobile\bin\classes\com\mycompany\mygame\R$attr.class \
+D:\MyWork\JmeProject\Shaders\mobile\bin\classes\com\mycompany\mygame\R$drawable.class \
+D:\MyWork\JmeProject\Shaders\mobile\bin\classes\com\mycompany\mygame\R$id.class \
+D:\MyWork\JmeProject\Shaders\mobile\bin\classes\com\mycompany\mygame\R$layout.class \
+D:\MyWork\JmeProject\Shaders\mobile\bin\classes\com\mycompany\mygame\R$string.class \
+D:\MyWork\JmeProject\Shaders\mobile\bin\classes\com\mycompany\mygame\R.class \
+D:\MyWork\JmeProject\Shaders\mobile\bin\dexedLibs\jme3-plugins-3.2.4-stable-1bf4a40a8515e1972256dc5f89655c59.jar \
+D:\MyWork\JmeProject\Shaders\mobile\bin\dexedLibs\dense64-0.27-349ec23c4ec83bd3e302ff4ba317b86e.jar \
+D:\MyWork\JmeProject\Shaders\mobile\bin\dexedLibs\simple-0.27-9af2088ecc765e2d4a1a6e041172b3d9.jar \
+D:\MyWork\JmeProject\Shaders\mobile\bin\dexedLibs\j-ogg-all-1.0.0-f928d031330f368c1fdd44b56657d4bc.jar \
+D:\MyWork\JmeProject\Shaders\mobile\bin\dexedLibs\denseC64-0.27-4f2f74b0aab5b3d2ca7f5d9d85572509.jar \
+D:\MyWork\JmeProject\Shaders\mobile\bin\dexedLibs\jme3-networking-3.2.4-stable-b3260a4e3b2a92cdc0674bc96037a5c8.jar \
+D:\MyWork\JmeProject\Shaders\mobile\bin\dexedLibs\jme3-android-native-3.2.4-stable-523c9f4abadd4bf8d60101fc6708fe7f.jar \
+D:\MyWork\JmeProject\Shaders\mobile\bin\dexedLibs\jme3-effects-3.2.4-stable-e5d72d8d63705ed3f71b87ca85de8032.jar \
+D:\MyWork\JmeProject\Shaders\mobile\bin\dexedLibs\MyGame-3d0bc1bf0f8ece19ad6c2ff6fc30ffd3.jar \
+D:\MyWork\JmeProject\Shaders\mobile\bin\dexedLibs\core-0.27-8c05a3bd3417f7fea78c853ccad8a332.jar \
+D:\MyWork\JmeProject\Shaders\mobile\bin\dexedLibs\gson-2.8.1-893c8e519aca0d06128398c3562a95e0.jar \
+D:\MyWork\JmeProject\Shaders\mobile\bin\dexedLibs\jme3-bullet-3.2.4-stable-172c97a6432362c2f91aa77bfcf267bc.jar \
+D:\MyWork\JmeProject\Shaders\mobile\bin\dexedLibs\jme3-jogg-3.2.4-stable-415a782edc378c61322206f4f172bc05.jar \
+D:\MyWork\JmeProject\Shaders\mobile\bin\dexedLibs\jme3-core-3.2.4-stable-cd9f927110be0bb95dc82b302f5f30b3.jar \
+D:\MyWork\JmeProject\Shaders\mobile\bin\dexedLibs\jme3-android-3.2.4-stable-46ad0c23e0b264ef1102a503ffe44730.jar \
+D:\MyWork\JmeProject\Shaders\mobile\bin\dexedLibs\jme3-terrain-3.2.4-stable-f05413f192c5b799c2cdcd5994a7d21f.jar \
+D:\MyWork\JmeProject\Shaders\mobile\bin\dexedLibs\jme3-bullet-native-android-3.2.4-stable-b369890932af603634094b00f162db28.jar \
