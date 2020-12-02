@@ -1,0 +1,35 @@
+MaterialDef Simple {
+    MaterialParameters {
+        Texture2D Texture0
+        Texture2D Texture
+        Int NumSamples
+    }
+    Technique {
+        WorldParameters {
+        }
+        VertexShaderNodes {
+            ShaderNode PostVert {
+                Definition : PostVert : MatDefs/Post/Post.j3sn
+                InputMappings {
+                    iPos = Global.position
+                    iTexCoord = Attr.inTexCoord
+                }
+                OutputMappings {
+                    Global.position = oPos
+                }
+            }
+        }
+        FragmentShaderNodes {
+            ShaderNode PostFrag {
+                Definition : PostFrag : MatDefs/Post/Post.j3sn
+                InputMappings {
+                    iTexCoord = PostVert.iTexCoord
+                    tex0 = MatParam.Texture0
+                }
+                OutputMappings {
+                    Global.color = oColor
+                }
+            }
+        }
+    }
+}

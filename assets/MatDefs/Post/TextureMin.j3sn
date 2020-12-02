@@ -1,0 +1,21 @@
+ShaderNodeDefinitions{
+    ShaderNodeDefinition TextureMinFrag {      
+        Type: Fragment
+        Shader GLSL100: Shaders/Post/ShaderNodes/TextureMin.frag
+        Documentation{
+            从两个指定的纹理中混合采样
+            @input iTexCoord 输入纹理坐标属性
+            @input sampler0 输入采样纹理0
+            @input sampler1 输入采样纹理1
+            @output oColor 输出颜色
+        }
+        Input {
+            vec2 iTexCoord
+            sampler2D sampler0
+            sampler2D sampler1
+        }
+        Output {
+            vec4 oColor
+        }
+    }
+}

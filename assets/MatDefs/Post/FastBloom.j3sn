@@ -1,0 +1,20 @@
+ShaderNodeDefinitions{
+    ShaderNodeDefinition FastBloomFrag {      
+        Type: Fragment
+        Shader GLSL100: Shaders/Post/ShaderNodes/FastBloom.frag
+        Documentation{
+            简单的Bloom着色器；创建用于移动端。
+            没有过多的样本和复杂的嵌套循环（使其与低端GPU兼容，并确保兼容移动端）。 
+            @input iTexCoord 输入纹理坐标属性
+            @input sampler0 输入采样纹理
+            @output oColor 输出颜色
+        }
+        Input {
+            vec2 iTexCoord
+            sampler2D sampler0
+        }
+        Output {
+            vec4 oColor
+        }
+    }
+}

@@ -2,6 +2,7 @@ MaterialDef SimplerBloomNodes {
     MaterialParameters {
         Texture2D Texture
         Int NumSamples
+        Texture2D Texture2
     }
     Technique {
         WorldParameters {
@@ -27,6 +28,63 @@ MaterialDef SimplerBloomNodes {
                 InputMappings {
                     iTexCoord = PostVert.iTexCoord
                     sampler0 = MatParam.Texture
+                }
+            }
+        }
+    }
+    Technique FastBloom {
+        WorldParameters {
+        }
+        VertexShaderNodes {
+            ShaderNode PostVert {
+                Definition : PostVert : MatDefs/Post/Post.j3sn
+                InputMappings {
+                    iPos = Global.position
+                    iTexCoord = Attr.inTexCoord
+                }
+                OutputMappings {
+                    Global.position = oPos
+                }
+            }
+        }
+        FragmentShaderNodes {
+            ShaderNode FastBloomFrag {
+                Definition : FastBloomFrag : MatDefs/Post/FastBloom.j3sn
+                InputMappings {
+                    sampler0 = MatParam.Texture
+                    iTexCoord = PostVert.iTexCoord
+                }
+                OutputMappings {
+                    Global.color = oColor
+                }
+            }
+        }
+    }
+    Technique TextureMix {
+        WorldParameters {
+        }
+        VertexShaderNodes {
+            ShaderNode PostVert {
+                Definition : PostVert : MatDefs/Post/Post.j3sn
+                InputMappings {
+                    iPos = Global.position
+                    iTexCoord = Attr.inTexCoord
+                }
+                OutputMappings {
+                    Global.position = oPos
+                }
+            }
+        }
+        FragmentShaderNodes {
+            ShaderNode TextureMinFrag {
+                Definition : TextureMinFrag : MatDefs/Post/TextureMin.j3sn
+                InputMappings {
+                    sampler0 = MatParam.Texture
+                    iTexCoord = PostVert.iTexCoord
+                    sampler1 = MatParam.Texture2
+                }
+                OutputMappings {
+                    Global.color0 = oColor
                 }
             }
         }
