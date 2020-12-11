@@ -1,0 +1,12 @@
+Material My Material : MatDefs/Mobile/MobilePBRLighting.j3md {
+     MaterialParameters {
+        Specular : 0.8 0.8 0.8 1.0
+        BaseColor : 1.0 0.4 0.6 1.0
+        Emissive : 0.0 0.0 0.0 1.0
+        Metallic : 0.2
+        Roughness : 0.2
+        EmissivePower : 0.2
+     }
+    AdditionalRenderState {
+    }
+}

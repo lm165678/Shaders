@@ -1,0 +1,20 @@
+Material Tank : MatDefs/Mobile/MobilePBRLighting.j3md {
+     MaterialParameters {
+        
+        MetallicMap : Flip "Models/Tank/Tank_Metallic.png"
+        RoughnessMap : Flip "Models/Tank/Tank_Roughness.png"
+        NormalMap : Flip "Models/Tank/Tank_Normal.png"
+        BaseColorMap : Flip "Models/Tank/Tank_Base_Color.png"
+        EmissiveMap : Flip "Models/Tank/Tank_Emissive.png"
+        LightMap: Flip "Models/Tank/Tank_AO.png"
+        LightMapAsAOMap: true
+        EmissiveIntensity : 2.0
+     
+        Pattern1 : true
+        Pattern2 : false
+        Pattern3 : false
+        Pattern4 : false
+     }
+    AdditionalRenderState {
+    }
+}

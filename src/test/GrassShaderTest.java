@@ -102,6 +102,6 @@ public class GrassShaderTest extends FastApplication{
     }
     
     public final static void main(String[] args){
-        new GrassShaderTest("GeometryShaderTest").start();
+        new GrassShaderTest("GrassShaderTest").start();
     }
 }

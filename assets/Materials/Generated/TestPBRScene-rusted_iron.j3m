@@ -1,0 +1,12 @@
+Material My Material : Common/MatDefs/Light/PBRLighting.j3md {
+     MaterialParameters {
+        NormalMap : Repeat "Textures/pbr/rusted_iron/normal.png"
+        LightMap : Repeat "Textures/pbr/rusted_iron/ao.png"
+        LightMapAsAOMap : true
+        BaseColorMap : Repeat "Textures/pbr/rusted_iron/albedo.png"
+        MetallicMap : Repeat "Textures/pbr/rusted_iron/metallic.png"
+        RoughnessMap : Repeat "Textures/pbr/rusted_iron/roughness.png"
+     }
+    AdditionalRenderState {
+    }
+}

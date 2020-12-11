@@ -1,0 +1,26 @@
+Material MyMaterial : MatDefs/Mobile/MobilePBRLighting.j3md {
+    MaterialParameters {
+        BackfaceShadows : true
+        Pattern1 : false
+        BaseColorMap : Repeat "Textures/pbr/grass/albedo.png"
+        MetallicMap : Repeat "Textures/pbr/grass/metallic.png"
+        RoughnessMap : Repeat "Textures/pbr/grass/roughness.png"
+        NormalMap : Repeat "Textures/pbr/grass/normal.png"
+        LightMap : Repeat "Textures/pbr/grass/ao.png"
+        LightMapAsAOMap : true
+        Pattern2 : false
+        Pattern3 : false
+        Pattern4 : true
+    }
+    AdditionalRenderState {
+      PointSprite On
+      FaceCull Back
+      AlphaTestFalloff 0.0
+      DepthWrite On
+      ColorWrite On
+      PolyOffset 0.0 0.0
+      DepthTest On
+      Blend Off
+      Wireframe Off
+    }
+}

@@ -1,0 +1,26 @@
+Material MyMaterial : MatDefs/Mobile/MobilePBRLighting.j3md {
+    MaterialParameters {
+        BackfaceShadows : true
+        LightMap : Repeat "Textures/pbr/rusted_iron/ao.png"
+        LightMapAsAOMap : true
+        BaseColorMap : Repeat "Textures/pbr/rusted_iron/albedo.png"
+        MetallicMap : Repeat "Textures/pbr/rusted_iron/metallic.png"
+        RoughnessMap : Repeat "Textures/pbr/rusted_iron/roughness.png"
+        NormalMap : Repeat "Textures/pbr/rusted_iron/normal.png"
+        Pattern1 : false
+        Pattern2 : false
+        Pattern4 : true
+        Pattern3 : false
+    }
+    AdditionalRenderState {
+      PointSprite On
+      FaceCull Back
+      AlphaTestFalloff 0.0
+      DepthWrite On
+      ColorWrite On
+      PolyOffset 0.0 0.0
+      DepthTest On
+      Blend Off
+      Wireframe Off
+    }
+}

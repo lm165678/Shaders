@@ -1,0 +1,28 @@
+Material Plastic_Mobile_PBR_Pattern1 : MatDefs/Mobile/MobilePBRLighting.j3md {
+    MaterialParameters {
+        BackfaceShadows : true
+        Pattern1 : false
+        BaseColorMap : Repeat "Textures/pbr/plastic/albedo.png"
+        MetallicMap : Repeat "Textures/pbr/plastic/metallic.png"
+        RoughnessMap : Repeat "Textures/pbr/plastic/roughness.png"
+        NormalMap : Repeat "Textures/pbr/plastic/normal.png"
+        Pattern2 : false
+        Pattern3 : false
+        Pattern4 : true
+        BaseColor : 1.0 1.0 1.0 1.0
+        Specular : 0.6 0.6 0.6 1.0
+        LightMap : Repeat "Textures/pbr/plastic/ao.png"
+        LightMapAsAOMap : true
+    }
+    AdditionalRenderState {
+      PointSprite On
+      FaceCull Back
+      AlphaTestFalloff 0.0
+      DepthWrite On
+      ColorWrite On
+      PolyOffset 0.0 0.0
+      DepthTest On
+      Blend Off
+      Wireframe Off
+    }
+}

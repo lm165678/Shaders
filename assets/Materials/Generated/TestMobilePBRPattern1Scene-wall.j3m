@@ -1,0 +1,26 @@
+Material MyMaterial : MatDefs/Mobile/MobilePBRLighting.j3md {
+    MaterialParameters {
+        BackfaceShadows : true
+        LightMap : Repeat "Textures/pbr/wall/ao.png"
+        LightMapAsAOMap : true
+        Pattern1 : false
+        MetallicMap : Repeat "Textures/pbr/wall/metallic.png"
+        RoughnessMap : Repeat "Textures/pbr/wall/roughness.png"
+        BaseColorMap : Repeat "Textures/pbr/wall/albedo.png"
+        NormalMap : Repeat "Textures/pbr/wall/normal.png"
+        Pattern2 : false
+        Pattern3 : false
+        Pattern4 : true
+    }
+    AdditionalRenderState {
+      PointSprite On
+      FaceCull Back
+      AlphaTestFalloff 0.0
+      DepthWrite On
+      ColorWrite On
+      PolyOffset 0.0 0.0
+      DepthTest On
+      Blend Off
+      Wireframe Off
+    }
+}
